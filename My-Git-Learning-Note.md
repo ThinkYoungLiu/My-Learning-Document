@@ -32,4 +32,9 @@ HEAD表示当前版本，上一个版本就是HEAD^，往前100个版本是HEAD~
 
 使用git reset来回退版本  git reset --hard "version"
 
-git reflog 记录每一次命令 
+git reflog 记录每一次命令
+
+git remote add origin "git" 把当前版本库和远程库连接起来
+
+关联后，使用命令`git push -u origin master`第一次推送master分支的所有内容
+
