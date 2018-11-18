@@ -26,7 +26,7 @@ git status 查看仓库当前的状态
 
 git diff  "filename"   查看文件变化
 
-git log 显示从近到远的提交日志  --preety=oneline
+git log 显示从近到远的提交日志  --pretty=oneline
 
 HEAD表示当前版本，上一个版本就是HEAD^，往前100个版本是HEAD~100.
 
