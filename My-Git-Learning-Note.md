@@ -38,3 +38,33 @@ git remote add origin "git" 把当前版本库和远程库连接起来
 
 关联后，使用命令`git push -u origin master`第一次推送master分支的所有内容
 
+git checkout -b "branch-name" 创建并切换到新建分支
+
+git branch "branch-name" 创建新分支
+
+git checkout "branch-name" 切换到分支
+
+git merge用于合并指定分支到当前分支
+
+git branch -d "branch-name" 删除分支
+
+git merge --no--ff 非fastforward模式合并分支
+
+git stash 存储工作现场，git stash pop回到现场
+
+git stash list 查看所有stash，git stash apply stash@{num}
+
+git stash apply 回复后并不删除  git stash drop 删除
+
+如果要丢弃一个没有被合并过的分支，可以通过`git branch -D <name>`强行删除 
+
+要查看远程库的信息，用`git remote`  或者git remote -v
+
+git push "branch-name"    origin代表远端
+
+git pull 从远端更新本地
+
+本地分支和远程分支的链接关系没有创建，用命令`git branch --set-upstream-to <branch-name> origin/<branch-name>` 
+
+这就是git rebase操作的特点：把分叉的提交历史“整理”成一条直线，看上去更直观。缺点是本地的分叉提交已经被修改过了。 
+
