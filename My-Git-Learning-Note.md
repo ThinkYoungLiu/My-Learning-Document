@@ -68,3 +68,23 @@ git pull 从远端更新本地
 
 这就是git rebase操作的特点：把分叉的提交历史“整理”成一条直线，看上去更直观。缺点是本地的分叉提交已经被修改过了。 
 
+git tag "tag-name" 打标签
+
+git tag 查看所有标签   标签按照字母排序
+
+git show "tagname" 查看标签信息
+
+还可以创建带有说明的标签，用`-a`指定标签名，`-m`指定说明文字：
+
+```
+$ git tag -a v0.1 -m "version 0.1 released" 1094adb
+```
+
+tag 和commit挂钩
+
+git tag -d "tag-name" 删除标签
+
+git push origin "tag-name" 推送某个标签到远程
+
+git config --global color.ui true git适当的显示不同颜色
+
